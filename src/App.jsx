@@ -11,7 +11,7 @@ import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import Popup from './components/Popup/Popup';
-import "./App.css"
+// import "./App.css"
 
 const App = () => {
  const [orderPopUp, setOrderPopUp] = useState(false);
