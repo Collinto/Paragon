@@ -30,7 +30,7 @@ const Hero = ({ handleOrderPopUp }) => {
     ];
 
   return (
-    <div className='overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 '>
+    <div className='min-h-[550px] sm:min-h-[650px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 '>
         {/* Background pattern */}
         <div className='h-[300px] w-[300px] lg:bg-primary/40 right-[8rem] absolute -bottom-36 rounded-b-[200px] rounded-r-[200px] sm:bg-primary/10 rotate-[45deg] -z-9'>
         </div>
