@@ -11,6 +11,7 @@ import Subscribe from './components/Subscribe/Subscribe';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import Popup from './components/Popup/Popup';
+import "./App.css"
 
 const App = () => {
  const [orderPopUp, setOrderPopUp] = useState(false);
@@ -21,7 +22,7 @@ const App = () => {
 
   useEffect(()=>{
     AOS.init({
-      offset: 100,
+      offset: 80,
       duration: 800,
       easing: "ease-in-sine",
       delay: 100,
