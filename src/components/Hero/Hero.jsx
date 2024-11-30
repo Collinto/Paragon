@@ -61,7 +61,7 @@ const Hero = ({ handleOrderPopUp }) => {
                                 // data-aos="zoom-out"
                                 // data-aos-duraion="500"
                                 // data-aos-delay="100" 
-                                className='text-sm sm:mt-0 mt-20 '>{data.desc}</p>
+                                className='text-sm font-boldgoi sm:mt-0 mt-20 '>{data.desc}</p>
                             </div>
                         </div>
                         <div 
