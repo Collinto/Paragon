@@ -30,14 +30,14 @@ const Hero = ({ handleOrderPopUp }) => {
     ];
 
   return (
-    <div className='overflow-hidden h-[100vh] sm:min-h-[100px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 relative pb-0'>
+    <div className='overflow-hidden h-[100vh] sm:min-h-[650px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 relative pb-0'>
         {/* Background pattern */}
         {/* <div className='h-[300px] w-[300px] lg:bg-primary/40 right-[8rem] absolute -bottom-36 rounded-b-[200px] rounded-r-[200px] sm:bg-primary/10 rotate-[45deg] -z-9'>
         </div> */}
         <div className='h-[650px] w-[500px] bg-primary/40 right-0 absolute -top-3/2 rounded-3xl rotate-[45deg] -z-9 '>
         </div>
         {/* Hero Section */}
-        <div className="container pb-5 sm:pb-0 -translate-y-30 ">
+        <div className="container pb-5 sm:pb-0 -translate-y-30 " >
              <Carousel autoPlay 
                 infiniteLoop 
                 showThumbs={false} 
@@ -48,28 +48,29 @@ const Hero = ({ handleOrderPopUp }) => {
                 showIndicators={false}
                 className='transform -translate-y-10 sm:-translate-y-20 '> 
                 {ImageList.map((data)=>(
-                <div className='flex flex-col-reverse gap-4 justify-around md:flex-row' key={data.id}>
+                <div className='flex flex-col-reverse gap-4 justify-around md:flex-row md:gap-0 ' style={{ zIndex: -100 }} key={data.id}>
                     <div className='flex flex-col justify-between '>
                         <div className=''>
                             {/* text content section */}
-                            <div className='flex flex-col lg:w-[700px] h-[180px] sm:h-[7rem] justify-between '>
+                            <div className='flex flex-col lg:w-[700px] h-[180px] sm:min-h-[2rem] justify-between '>
                                 <h1 data-aos="zoom-out"
                                 data-aos-duraion="500"
-                                data-aos-once="true" className=' text-5xl sm:text-3xl lg:text-7xl text-wrap text-center font-bold mt-0 lg:mb-10'>{data.title}</h1>
+                                data-aos-once="true" className=' text-4xl sm:text-3xl lg:text-7xl text-wrap text-center font-bold mt-0 md:mb-[10px] lg:mb-10 pb-0'>{data.title}</h1>
 
                                 <p 
                                 // data-aos="zoom-out"
                                 // data-aos-duraion="500"
                                 // data-aos-delay="100" 
-                                className='text-sm font-bold sm:mt-0 mt-20 '>{data.desc}</p>
+                                className='text-sm text-gray-700 font-bold mt-10  lg:mt-20'>{data.desc}</p>
                             </div>
                         </div>
                         <div 
-                        data-aos="fade-up"
-                        data-aos-duraion="500"
-                        data-aos-delay="100" 
-                        offset='40'>
-                            <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 rounded-full py-2 px-4 text-white mt-40' onClick={()=>{handleOrderPopUp()}}> Order Now      </button>
+                        // data-aos="fade-up"
+                        // data-aos-duraion="200"
+                        // data-aos-delay="1" 
+                        // offset='2'
+                        >
+                            <button className='bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 rounded-full py-2 px-4 text-white mt-[30px]' onClick={()=>{handleOrderPopUp()}}> Order Now      </button>
                         </div>
                     </div>
             
