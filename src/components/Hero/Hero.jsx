@@ -30,14 +30,14 @@ const Hero = ({ handleOrderPopUp }) => {
     ];
 
   return (
-    <div className='overflow-x-hidden min-h-[550px] sm:min-h-[650px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 '>
+    <div className='overflow-hidden h-[100vh] sm:min-h-[100px] bg-gray-50 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 relative pb-0'>
         {/* Background pattern */}
-        <div className='h-[300px] w-[300px] lg:bg-primary/40 right-[8rem] absolute -bottom-36 rounded-b-[200px] rounded-r-[200px] sm:bg-primary/10 rotate-[45deg] -z-9'>
-        </div>
-        <div className='h-[650px] w-[500px] bg-primary/40 right-0 absolute -top-1/2 rounded-3xl rotate-[45deg] -z-9 '>
+        {/* <div className='h-[300px] w-[300px] lg:bg-primary/40 right-[8rem] absolute -bottom-36 rounded-b-[200px] rounded-r-[200px] sm:bg-primary/10 rotate-[45deg] -z-9'>
+        </div> */}
+        <div className='h-[650px] w-[500px] bg-primary/40 right-0 absolute -top-3/2 rounded-3xl rotate-[45deg] -z-9 '>
         </div>
         {/* Hero Section */}
-        <div className="container pb-8 sm:pb-0 -translate-y-10">
+        <div className="container pb-5 sm:pb-0 -translate-y-30 ">
              <Carousel autoPlay 
                 infiniteLoop 
                 showThumbs={false} 
@@ -46,7 +46,7 @@ const Hero = ({ handleOrderPopUp }) => {
                 stopOnHover={false}
                 showArrows={false} 
                 showIndicators={false}
-                className='transform -translate-y-10 sm:-translate-y-20'> 
+                className='transform -translate-y-10 sm:-translate-y-20 '> 
                 {ImageList.map((data)=>(
                 <div className='flex flex-col-reverse gap-4 justify-around md:flex-row' key={data.id}>
                     <div className='flex flex-col justify-between '>
@@ -58,9 +58,10 @@ const Hero = ({ handleOrderPopUp }) => {
                                 data-aos-once="true" className=' text-5xl sm:text-3xl lg:text-7xl text-wrap text-center font-bold mt-0 lg:mb-10'>{data.title}</h1>
 
                                 <p 
-                                data-aos="zoom-out"
-                                data-aos-duraion="500"
-                                data-aos-delay="100"  className='text-sm sm:mt-0 mt-20 '>{data.desc}</p>
+                                // data-aos="zoom-out"
+                                // data-aos-duraion="500"
+                                // data-aos-delay="100" 
+                                className='text-sm sm:mt-0 mt-20 '>{data.desc}</p>
                             </div>
                         </div>
                         <div 

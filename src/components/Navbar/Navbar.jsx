@@ -77,7 +77,7 @@ const Navbar = ({handleOrderPopUp}) => {
             <IoMoon className='text-xl text-gray-500 hover:scale-125 cursor-pointer drop-shadow-[10px
             _1px_1px_rgba(0, 0, 0, 0.1)] transition-all duration-300 '/> */}
 
-            < Mood />
+            {/* < Mood /> */}
           </div> 
         </div>
       </div>
